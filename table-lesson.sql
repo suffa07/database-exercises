@@ -3,10 +3,10 @@
 # select * from mysql.user\G
 USE codeup_test_db;
 
-/*DROP TABLE IF EXISTS quote;
+DROP TABLE IF EXISTS quote;
 DROP TABLE IF EXISTS airline;
 DROP TABLE IF EXISTS people;
-DROP TABLE IF EXISTS users;*/
+DROP TABLE IF EXISTS users;
 
 
 
@@ -32,7 +32,7 @@ CREATE TABLE  IF NOT EXISTS people (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   name   VARCHAR(255)  NOT NULL,
   age    INT           NOT NULL,
-  salary DECIMAL(4, 1) NOT NULL
+  salary DECIMAL(5, 1) NOT NULL
   -- 7.6
   -- 100.5
 );
@@ -43,3 +43,5 @@ CREATE TABLE  IF NOT EXISTS users (
   password VARCHAR(255),
   is_admin TINYINT NOT NULL
 );
+
+INSERT INTO people(name , age, salary) VALUES ('Del', 46, 8500);
