@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+# DELETE FROM albums; /* Counter will not reset, but start at the last counter*/
+TRUNCATE albums; /* will reset the counter for the auto_increment column*/
 
 INSERT INTO albums
 
@@ -53,4 +55,27 @@ VALUES
 ('Toni Braxton', 'Secrets', 1996, 'R&B, Pop', 20),
 ('Usher', 'Confessions', 2004, 'R&B', 20),
 ('Green Day', 'Dookie', 1994, 'Pop-punk, punk rock, alternative rock', 20),
-('Shakira', 'Laundry Service', 2001, 'Pop, Rock', 20);
+('Shakira', 'Laundry Service', 2001, 'Pop, Rock', 20),
+('Whitney Houston / Various artists', 'The Bodyguard', 1992, 'Soundtrack/R&B, soul, pop', 27.4),
+('Meat Loaf', 'Bat Out of Hell', 1977, 'Hard rock, progressive rock', 20.6),
+('Eagles', 'Their Greatest Hits (1971–1975)', 1976, 'Rock, soft rock, folk rock', 32.2),
+('Bee Gees / Various artists', 'Saturday Night Fever', 1977, 'Disco', 19),
+('Fleetwood Mac', 'Rumours', 1977, 'Soft rock', 27.9),
+('Shania Twain', 'Come On Over', 1997, 'Country, pop', 29.6),
+('Led Zeppelin', 'Led Zeppelin IV', 1971, 'Hard rock, heavy metal', 29.0),
+('Spice Girls', 'Spice', 1996, 'Pop', 28),
+('Alanis Morissette', 'Jagged Little Pill', 1995, 'Alternative rock', 24.8),
+('Celine Dion', 'Falling into You', 1996, 'Pop / Soft rock', 20.2),
+('Eagles', 'Hotel California', 1976, 'Rock, soft rock, folk rock', 21.5),
+('Various artists', 'Dirty Dancing', 1987, 'Pop, rock, R&B', 17.9),
+('Mariah Carey', 'Music Box', 1993, 'Pop / R&B / Rock', 19.5),
+('Various artists', 'Dirty Dancing', 1987, 'Pop, rock, R&B', 17.9),
+('Celine Dion', 'Let''s Talk About Love', 1997, 'Pop / Soft rock', 19.3),
+('The Beatles', 1, 2000, 'Rock', 21.6),
+('Adele', 21, 2011, 'Pop, soul', 21.3),
+('The Beatles', 'Abbey Road', 1969, 'Rock', 14.4),
+('Bruce Springsteen', 'Born in the U.S.A.', 1984, 'Rock', 19.6),
+('Dire Straits', 'Brothers in Arms', 1985, 'Rock', 18.6),
+('Whitney Houston', 'Whitney Houston', 1985, 'Pop, R&B', 17.2),
+('James Horner', 'Titanic: Music from the Motion Picture', 1997, 'Soundtrack', 18.1),
+('AC/DC', 'Back in Black', 1980, 'Hard rock', 25.9);
