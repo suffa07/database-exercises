@@ -6,10 +6,12 @@ AND (first_name = 'Irena' OR first_name='Vidya' OR first_name='Maya')
 ORDER BY  last_name, first_name;
 
 
-/*SELECT first_name, last_name FROM employees
-WHERE last_name LIKE 'E%' OR  last_name LIKE '%E';
+SELECT emp_no, first_name, last_name FROM employees
+WHERE last_name LIKE '%E%'
+ORDER BY emp_no;
 
-SELECT first_name, last_name FROM employees
+
+/*SELECT first_name, last_name FROM employees
 WHERE last_name LIKE 'E%%E';
 
 SELECT first_name, last_name, birth_date, hire_date FROM employees
