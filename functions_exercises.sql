@@ -1,10 +1,10 @@
-SELECT first_name, last_name, gender FROM employees
-WHERE  gender = 'm'
+SELECT COUNT(*), gender FROM employees
+WHERE  gender = 'm' OR gender = 'f'
        AND (first_name = 'Irena' OR first_name='Vidya' OR first_name='Maya')
-ORDER BY  last_name, first_name;
+GROUP BY  gender;
 
 
-SELECT emp_no, first_name, last_name FROM employees
+SELECT emp_no, CONCAT(first_name, " ", last_name) AS 'Name' FROM employees
 WHERE last_name LIKE 'E%E'
 ORDER BY emp_no;
 
