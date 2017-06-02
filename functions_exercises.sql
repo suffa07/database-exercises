@@ -10,7 +10,7 @@ ORDER BY emp_no;
 
 
 
-SELECT first_name, last_name, birth_date, hire_date FROM employees
+SELECT first_name, last_name, birth_date, CONCAT((CURDATE() - UNIX_TIMESTAMP(hire_date) / 60 * 60 * 24), ' Days Working') FROM employees
 WHERE birth_date LIKE '%12-25'
       AND (hire_date BETWEEN '1990-01-01' AND '1999-01-01')
 ORDER BY  hire_date ASC;
